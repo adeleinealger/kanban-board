@@ -46,7 +46,7 @@ const EditTicket = () => {
 
   return (
     <>
-      <div className='container'>
+      <div className='form-container'>
         {
           ticket ? (
             <form className='form' onSubmit={handleSubmit}>
@@ -76,7 +76,7 @@ const EditTicket = () => {
                 value={ticket.description || ''}
                 onChange={handleTextAreaChange}
               />
-              <button type='submit'>Submit Form</button>
+              <button type='submit'>Update</button>
             </form>
           ) : (
             <div>Issues fetching ticket</div>

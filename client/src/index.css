@@ -28,11 +28,11 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #058ed9;
 }
 
 body {
-  background: #ECF0F1;
+  background: #483d3f;
   background-size: cover;
   background-repeat: no-repeat no-repeat;
   background-position: center center;
@@ -54,12 +54,12 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #fff;
   cursor: pointer;
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #058ed9;
 }
 button:focus,
 button:focus-visible {
@@ -105,7 +105,7 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-title a {
-  color: #b864c4;
+  color: #058ed9;
 }
 
 .nav-item {
@@ -137,25 +137,26 @@ tbody tr:nth-child(odd) {
 }
 
 .swim-lane {
+  /* display: flex; */
   text-align: center;
   font-weight: 500;
   width: 33%;
-  height: 90vh; 
+  height: 90vh;
   border: 1px solid rgba(0, 0, 0, 0.2);
   margin: 5px;
   padding: 5px;
 }
 
 .todo {
-  background-color: #e9cbec;
+  background-color: #f4ebd9;
 }
 
 .inprogress {
-  background-color: #b864c4;
+  background-color: #a39a92;
 }
 
 .done {
-  background-color: #732381;
+  background-color: #77685d;
 }
 
 .ticket-card {
@@ -169,50 +170,41 @@ tbody tr:nth-child(odd) {
 }
 
 .container {
-  /* margin: auto; */
   width: 100%;
-  /* height: 90%; */
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+  height: 100%;
 }
 
 #create-ticket-link {
   display: block;
   margin-left: auto;
+  margin-right: 10px;
 }
-
 
 .form {
   width: 60%;
-  height: 80%;
-  background-color: #b864c4;
-  margin: auto;
+  max-width: 600px;
+  background-color: #f4ebd9;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: flex-start; /* Aligns fields to the left */
 }
 
 .form > h1, .form > label {
-  color: yellow;
+  color: #000;
 }
 
-.form > input {
-  width: 200px;
-  
-}
-
-.form > label {
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-}
-
-.form button {
-  margin-top: 2.5%;
-}
-
-.form textarea {
-  resize: both;
-  min-height: 30px;
-  min-width: 30px;
+.form input, .form label, .form textarea, .form select, .form button {
+  width: 50%; /* Makes all form elements take the full width of the form */
+  margin-bottom: 15px;
 }
 
 .editBtn {
@@ -240,18 +232,4 @@ tbody tr:nth-child(odd) {
   width: 100%;
   align-items: center;
   justify-content: center;
-}
-
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
